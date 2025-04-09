@@ -1,0 +1,7 @@
+# source data configuration: csv files
+candy04_path: data/2020-04.csv
+candy05_path: data/2020-05.csv
+candy06_path: data/2020-06.csv
+candy07_path: data/2020-07.csv
+candy08_path: data/2020-08.csv
+candy09_path: data/2020-09.csv

@@ -1,0 +1,32 @@
+
+Call:
+lm(formula = charges ~ age2cat + children + bmi + bmi2cat * smoker + 
+    region, data = insurance)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-20816.1  -2594.1  -1076.7    812.4  25031.3 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)             1423.62     993.44   1.433 0.152090    
+age2catAge 4oplus       6446.78     266.63  24.179  < 2e-16 ***
+children1                441.07     336.71   1.310 0.190447    
+children2               1334.15     372.77   3.579 0.000357 ***
+children3               1570.29     437.28   3.591 0.000341 ***
+children4               3608.24     990.30   3.644 0.000279 ***
+children5               1566.29    1162.90   1.347 0.178249    
+bmi                      140.43      37.28   3.767 0.000173 ***
+bmi2catObese           -1036.29     460.42  -2.251 0.024567 *  
+smokeryes              13316.98     479.43  27.777  < 2e-16 ***
+regionnorthwest         -249.40     380.53  -0.655 0.512319    
+regionsoutheast         -931.76     383.13  -2.432 0.015148 *  
+regionsouthwest        -1176.04     381.86  -3.080 0.002114 ** 
+bmi2catObese:smokeryes 19772.12     658.05  30.046  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4837 on 1324 degrees of freedom
+Multiple R-squared:  0.842,	Adjusted R-squared:  0.8405 
+F-statistic: 542.8 on 13 and 1324 DF,  p-value: < 2.2e-16
+

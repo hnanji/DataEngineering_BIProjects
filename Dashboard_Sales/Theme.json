@@ -1,0 +1,57 @@
+{
+    "name": "LearnPowerBI",
+    "dataColors": [
+        "#EC670F",     // Orange for bars
+        "#A9A9A9",     // Grey for shapes
+        "#3C3C3B",     // Dark grey text
+        "#E5EAEE",
+        "#5C85E6",
+        "#29BCC0",
+        "#7EAE40",
+        "#20B2E7",
+        "#D3DCE0",
+        "#FF6B0F"
+    ],
+    "background": "#DFF5E1",           // Light green for matrix visual backgrounds
+    "foreground": "#000000",           // Black for all text
+    "tableAccent": "#29BCC0",
+    "visualStyles": {
+        "*": {
+            "*": {
+                "*": [{
+                    "fontSize": 14,
+                    "fontFamily": "Segoe UI",
+                    "color": {"solid": {"color": "#000000"}}   // Black for all text
+                }],
+                "general": [{"responsive": true}]
+            }
+        },
+        "tableEx": {
+            "*": {
+                "columnHeaders": [{
+                    "autoSizeColumnWidth": true,
+                    "fontFamily": "Segoe UI Bold",
+                    "fontSize": 14,
+                    "color": {"solid": {"color": "#000000"}}  // Black for headers
+                }]
+            }
+        },
+        "matrix": {
+            "*": {
+                "background": {"solid": {"color": "#DFF5E1"}}  // Light green matrix background
+            }
+        },
+        "shape": {
+            "*": {
+                "fill": {"solid": {"color": "#A9A9A9"}}  // Grey for shapes
+            }
+        },
+        "barChart": {
+            "*": {
+                "dataPoint": {
+                    "fill": {"solid": {"color": "#EC670F"}}  // Orange for bars
+                }
+            }
+        }
+    }
+}
